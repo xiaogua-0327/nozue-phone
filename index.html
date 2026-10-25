@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta name="description" content="野末的手机：一段由生活痕迹展开的15分钟互动观察。">
+  <title>野末的手机｜15分钟观察</title>
+  <link rel="stylesheet" href="./styles.css?v=8">
+</head>
+<body>
+  <main class="device-stage">
+    <section class="phone" id="phone" aria-label="野末的手机">
+      <div class="screen" id="screen">
+        <div class="wallpaper" aria-hidden="true"><span class="nebula n1"></span><span class="nebula n2"></span><span class="stars"></span></div>
+
+        <header class="status-bar light" id="statusBar">
+          <span class="status-time" id="statusTime">18:40</span>
+          <span class="status-right" aria-hidden="true">
+            <svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+            <svg viewBox="0 0 16 12"><path d="M8 2.3c2.3 0 4.4.9 6 2.4l1.2-1.2A10.3 10.3 0 0 0 8 .6 10.3 10.3 0 0 0 .8 3.5L2 4.7a8.6 8.6 0 0 1 6-2.4Zm0 3.4c1.4 0 2.6.5 3.6 1.4l1.2-1.2A6.8 6.8 0 0 0 8 4a6.8 6.8 0 0 0-4.8 1.9l1.2 1.2c1-.9 2.2-1.4 3.6-1.4Zm0 3.4c-.6 0-1.2.2-1.6.6L8 11.3l1.6-1.6c-.4-.4-1-.6-1.6-.6Z"/></svg>
+            <span class="battery"><i id="batteryFill"></i></span>
+          </span>
+        </header>
+        <div class="dynamic-island" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+        <section class="view lock-view active" id="lockView" aria-label="锁屏">
+          <div class="lock-copy" id="lockCopy"><span class="lock-date">10月24日星期六</span><strong id="lockTime">18:40</strong></div>
+          <div class="lock-notices" id="lockNotices">
+            <button class="notice-card" type="button"><span class="mini-app messages-mini">●●●</span><span class="notice-text"><span><b>营业课工作群</b><time>现在</time></span><em>修订稿已上传，周一确认。</em></span></button>
+          </div>
+          <button class="mode-button" id="modeButton" type="button" aria-pressed="false">试玩 · 90 秒</button>
+          <div class="lock-actions" aria-hidden="true"><span>⌁</span><span>▣</span></div>
+          <button class="unlock-hint" id="enterButton" type="button">向上轻扫以打开</button>
+          <div class="pin-panel" id="pinPanel" aria-hidden="true">
+            <p>输入密码</p><div class="pin-dots" id="pinDots"><i></i><i></i><i></i><i></i></div>
+            <div class="pin-keys" aria-label="数字键盘">
+              <button data-digit="1"><b>1</b></button><button data-digit="2"><b>2</b><small>ABC</small></button><button data-digit="3"><b>3</b><small>DEF</small></button>
+              <button data-digit="4"><b>4</b><small>GHI</small></button><button data-digit="5"><b>5</b><small>JKL</small></button><button data-digit="6"><b>6</b><small>MNO</small></button>
+              <button data-digit="7"><b>7</b><small>PQRS</small></button><button data-digit="8"><b>8</b><small>TUV</small></button><button data-digit="9"><b>9</b><small>WXYZ</small></button>
+              <span></span><button data-digit="0"><b>0</b></button><span></span>
+            </div>
+            <div class="pin-bottom"><button type="button">紧急情况</button><button type="button" id="pinCancel">取消</button></div>
+          </div>
+        </section>
+
+        <section class="view home-view" id="homeView" aria-label="手机桌面">
+          <div class="widget-row">
+            <button class="widget calendar-widget app-button" data-app="calendar"><span class="widget-day">星期六</span><strong>24</strong><span class="widget-event">甜品店<small>11:00</small></span><span class="widget-event violet">回信<small>今天</small></span></button>
+            <button class="widget weather-widget app-button" data-app="weather"><span>东京 ↗</span><strong>17°</strong><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="5"/><path d="M7 19h11a4 4 0 0 0 0-8 6 6 0 0 0-11.4 1.7A3.3 3.3 0 0 0 7 19Z"/></svg><em>多云<small>最高19° 最低12°</small></em></button>
+          </div>
+          <div class="app-grid">
+            <button class="app-button" data-app="photos"><span class="app-icon photos-icon"><i></i></span><b>照片</b></button>
+            <button class="app-button" data-app="mail"><span class="app-icon mail-icon"><svg viewBox="0 0 60 60"><rect x="11" y="18" width="38" height="25" rx="4"/><path d="m12 20 18 13 18-13"/></svg></span><b>邮件</b><i class="badge">2</i></button>
+            <button class="app-button" data-app="calendar"><span class="app-icon calendar-icon"><small>星期六</small><strong>24</strong></span><b>日历</b></button>
+            <button class="app-button" data-app="clock"><span class="app-icon clock-icon"><i></i></span><b>时钟</b></button>
+            <button class="app-button" data-app="notes"><span class="app-icon notes-icon"><i></i></span><b>备忘录</b></button>
+            <button class="app-button" data-app="weather"><span class="app-icon weather-icon"><i></i></span><b>天气</b></button>
+            <button class="app-button" data-app="settings"><span class="app-icon settings-icon">⚙</span><b>设置</b></button>
+            <button class="app-button" data-app="maps"><span class="app-icon maps-icon"><i></i></span><b>地图</b></button>
+          </div>
+          <button class="spotlight" type="button" aria-label="搜索">⌕ <span>搜索</span></button>
+          <div class="dock">
+            <button class="app-button" data-app="phone"><span class="app-icon phone-icon">⌕</span><b>电话</b></button>
+            <button class="app-button" data-app="browser"><span class="app-icon safari-icon"><i></i></span><b>Safari</b></button>
+            <button class="app-button" data-app="messages"><span class="app-icon messages-icon"><i></i></span><b>信息</b><i class="badge hidden" id="messageBadge">0</i></button>
+            <button class="app-button" data-app="music"><span class="app-icon music-icon">♪</span><b>音乐</b></button>
+          </div>
+        </section>
+
+        <section class="view app-view" id="appView" aria-live="polite">
+          <header class="app-header"><button id="backButton" class="nav-button back-button" aria-label="返回">‹ <span>返回</span></button><div><span id="appKicker">最近项目</span><h2 id="appTitle">照片</h2></div><button id="homeButton" class="nav-button home-button" aria-label="返回桌面">完成</button></header>
+          <div class="app-content" id="appContent"></div>
+        </section>
+
+        <div class="notification-stack" id="notificationStack" aria-live="polite"></div><div class="toast" id="toast" role="status"></div>
+        <div class="call-overlay" id="callOverlay" aria-hidden="true"><span class="call-label">外川</span><div class="caller-avatar">外</div><h2>外川</h2><p>手机 · 来电中</p><div class="call-caption" id="callEnding">他没有再发第四条消息。<br>因为这一次，他已经亲自来了。</div><div class="call-actions"><button class="decline" id="returnHomeButton" aria-label="返回桌面">×</button><button class="accept" aria-label="接听">⌕</button></div><button class="restart-button" id="restartButton">重新开始故事</button></div>
+        <div class="gesture-bar" aria-hidden="true"></div>
+      </div>
+    </section>
+  </main>
+  <script src="./app.js?v=8"></script>
+</body>
+</html>
